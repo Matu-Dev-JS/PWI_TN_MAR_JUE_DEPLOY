@@ -5,6 +5,7 @@ import HomeScreen from './Screens/HomeScreen'
 import WorkspaceScreen from './Screens/WorkspaceScreen'
 import EstadosScreen from './Screens/EstadosScreen'
 import FomulariosScreen from './Screens/FomulariosScreen'
+import ContactsScreen from './Screens/ContactsScreen'
 
 
 /* 
@@ -33,6 +34,8 @@ function App() {
 					path='/formularios' 
 					element={<FomulariosScreen/>}
 				/>
+				<Route path='/contacts' element={<ContactsScreen/>}/>
+				<Route path='/contacts/:contact_id' element={<ContactsScreen/>}/>
 			</Routes>
 		</div>
 	)

@@ -29,7 +29,7 @@ const mensajes = [
     },
 ]
 
-const contacts = [
+export const contacts = [
     {
         nombre: 'pedro',
         id: 1,
