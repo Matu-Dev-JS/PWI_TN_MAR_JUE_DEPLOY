@@ -39,16 +39,25 @@ const ContactsScreen = () => {
     
     console.log(contact_found)
     
-    
+    const goBack = () => {
+        navigate(-1)
+    }
+    const goForward = () => {
+        navigate(1)
+    }
     return (
         <div>
+            <button onClick={goBack}>Back</button>
+            <button onClick={goForward}>Ir adelante</button>
             <h1>Lista de contactos</h1>
             <button onClick={incrementar}>incrementar</button>
+            <img src='/images/auto-rojo.avif'/>
             <div>
                 {
                     contacts.map((contact) => {
                         return (
                             <>
+                                <img src={contact.avatar} alt={contact.nombre} width={50} />
                                 <Link key={contact.id} to={'/contacts/' + contact.id}>{contact.nombre}</Link>
                                 <br/>
                                 <hr/>

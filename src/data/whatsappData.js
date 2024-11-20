@@ -33,6 +33,7 @@ export const contacts = [
     {
         nombre: 'pedro',
         id: 1,
+        avatar: '/images/auto-rojo.avif',
         mensajes: [
             {
                 emisor: 'YO',
@@ -67,6 +68,7 @@ export const contacts = [
     {
         nombre: 'maria',
         id: 2,
+        avatar: '/images/auto-rojo.avif',
         mensajes: [
             {
                 emisor: 'YO',
